@@ -29,29 +29,6 @@ def inRange(matrix, pos):
     return 0 <= pos[0] < rows and 0 <= pos[1] < cols
 
 
-# def backtrackHeaviestPath(matrix, weightMatrix):
-#     start = [0, 0]
-#     pos = [len(weightMatrix) - 1, len(weightMatrix[0]) - 1]
-#     path = []
-#     while (pos != start):
-#         path.append(matrix[pos[0]][pos[1]])
-#         print(path)
-#         leftPos = [pos[0], pos[1] - 1]
-#         upPos = [pos[0] - 1, pos[1]]
-#         if inRange(matrix, leftPos) and inRange(matrix, upPos):
-#             if weightMatrix[leftPos[0]][leftPos[1]] > weightMatrix[upPos[0]][upPos[1]]:
-#                 pos = leftPos
-#             else:
-#                 pos = upPos
-#         elif inRange(matrix, leftPos):
-#             pos = leftPos
-#         else:
-#             pos = upPos
-#     path.append(matrix[start[0]][start[1]])
-#     path.reverse()
-#     return path
-
-
 def findHeaviestPath(matrix):
     endPos = [len(matrix) - 1, len(matrix[0]) - 1]
     weightMatrix = copy.deepcopy(matrix)
@@ -80,6 +57,10 @@ def findHeaviestPath(matrix):
                 else:
                     weightMatrix[i][j]["weight"] = matrix[i][j] + downWeight
                     weightMatrix[i][j]["path"] = [matrix[i][j]] + weightMatrix[downPos[0]][downPos[1]]["path"]
+    print("matrix")
+    printMatrix(matrix)
+    print("weightMatrix")
+    printMatrix(weightMatrix)
     return weightMatrix[0][0]["path"]
 
 
@@ -124,3 +105,10 @@ if __name__ == '__main__':
     writeMatrix(filename=filename, matrixString="1 1 1 1 1\n-2 1 1 1 1\n-2 1 1 1 1\n100 1 1 1 1")
     res5 = two_ways_path_sum(filename)
     assert (res5 == [1, -2, -2, 100, 1, 1, 1, 1])
+
+    filename = r"Test\matrix6.txt"
+    if os.path.exists(filename):
+        os.remove(filename)
+    writeMatrix(filename=filename, matrixString="1 1 1\n1 1 11\n100 10 5")
+    res5 = two_ways_path_sum(filename)
+    assert (res5 == [1,1,100,10,5])
