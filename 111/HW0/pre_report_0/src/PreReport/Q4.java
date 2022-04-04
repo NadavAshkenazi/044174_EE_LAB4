@@ -15,20 +15,19 @@ public class Q4 {
 
         // get count of empty strings
         int count = (int) strings.stream().filter(string -> !string.isEmpty()).count();
-        System.out.println("Q1.1: Non-Empty words count: " + count);
+        System.out.println("Q4.a: Non-Empty words count: " + count);
         for (String s: strings){
             if (!s.isEmpty()){
                 nonEmptyStrings.add(s);
 //                System.out.println(s);
             }
         }
-        System.out.println("Q1.2: Non-Empty words: " + nonEmptyStrings);
+        System.out.println("Q4.b: Non-Empty words: " + nonEmptyStrings);
         Random rnd = new Random();
         int size = Math.abs(rnd.nextInt()) % 5 + 2;
         List<Integer> numsArray = Stream.generate(() -> (rnd.nextInt() % 10)).limit(size).collect(Collectors.toList());
         List<Integer> numsSquareArray = numsArray.stream().mapToInt(i -> i*i).boxed().collect(Collectors.toList());
-        System.out.println("Q1.3: Squares: " + numsSquareArray);
+        System.out.println("Q4.c: Squares: " + numsSquareArray);
         System.out.println("      Squares sum: " + numsSquareArray.stream().mapToInt(i-> i).sum());
     }
-
 }
