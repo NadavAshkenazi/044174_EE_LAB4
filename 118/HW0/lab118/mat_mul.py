@@ -27,17 +27,17 @@ def mat_mul(mat1, mat2):
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    mat1 = [[1, 2], [3, 4], [5, 6], [7, 8]]
-    mat2 = [[9, 10, 11], [12, 13, 14]]
-
-    wantedMatrix = [[33, 36, 39], [75, 82, 89], [117, 128, 139], [159, 174, 189]]
-
-    assert (mat_mul(mat1, mat2) == wantedMatrix)
-
-    mat1 = [[1, 2], [3, 4], [5, 6]]
-    mat2 = [[1, 2, 3], [4, 5, 6]]
-
-    wantedMatrix = [[9, 12, 15], [19, 26, 33], [29, 40, 51]]
-
-    assert (mat_mul(mat1, mat2) == wantedMatrix)
+# if __name__ == '__main__':
+#     mat1 = [[1, 2], [3, 4], [5, 6], [7, 8]]
+#     mat2 = [[9, 10, 11], [12, 13, 14]]
+#
+#     wantedMatrix = [[33, 36, 39], [75, 82, 89], [117, 128, 139], [159, 174, 189]]
+#
+#     assert (mat_mul(mat1, mat2) == wantedMatrix)
+#
+#     mat1 = [[1, 2], [3, 4], [5, 6]]
+#     mat2 = [[1, 2, 3], [4, 5, 6]]
+#
+#     wantedMatrix = [[9, 12, 15], [19, 26, 33], [29, 40, 51]]
+#
+#     assert (mat_mul(mat1, mat2) == wantedMatrix)

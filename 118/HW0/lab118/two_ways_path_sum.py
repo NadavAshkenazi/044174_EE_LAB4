@@ -70,45 +70,45 @@ def two_ways_path_sum(filename):
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    filename = r"Test\matrix.txt"
-    if os.path.exists(filename):
-        os.remove(filename)
-    writeMatrix(filename=filename, matrixString="5 4 1 8\n5 2 9 6\n7 3 3 2")
-    res = two_ways_path_sum(filename)
-    assert (res == [5, 5, 2, 9, 6, 2])
-
-    filename = r"Test\matrix2.txt"
-    if os.path.exists(filename):
-        os.remove(filename)
-    writeMatrix(filename=filename, matrixString="5 4 1 100\n5 2 9 6\n7 3 3 2")
-    res2 = two_ways_path_sum(filename)
-    assert (res2 == [5, 4, 1, 100, 6, 2])
-
-    filename = r"Test\matrix3.txt"
-    if os.path.exists(filename):
-        os.remove(filename)
-    writeMatrix(filename=filename, matrixString="-5 -4 -1 -8\n-5 -2 -9 -6\n-7 -3 -3 -2")
-    res3 = two_ways_path_sum(filename)
-    assert (res3 == [-5, -4, -2, -3, -3, -2])
-
-    filename = r"Test\matrix4.txt"
-    if os.path.exists(filename):
-        os.remove(filename)
-    writeMatrix(filename=filename, matrixString="-2 1 -3\n-1 -1 8\n-1 -1 -5\n-1 -1 1")
-    res4 = two_ways_path_sum(filename)
-    assert (res4 == [-2, 1, -1, 8, -5, 1])
-
-    filename = r"Test\matrix5.txt"
-    if os.path.exists(filename):
-        os.remove(filename)
-    writeMatrix(filename=filename, matrixString="1 1 1 1 1\n-2 1 1 1 1\n-2 1 1 1 1\n100 1 1 1 1")
-    res5 = two_ways_path_sum(filename)
-    assert (res5 == [1, -2, -2, 100, 1, 1, 1, 1])
-
-    filename = r"Test\matrix6.txt"
-    if os.path.exists(filename):
-        os.remove(filename)
-    writeMatrix(filename=filename, matrixString="1 1 1\n1 1 11\n100 10 5")
-    res5 = two_ways_path_sum(filename)
-    assert (res5 == [1,1,100,10,5])
+# if __name__ == '__main__':
+#     filename = r"Test\matrix.txt"
+#     if os.path.exists(filename):
+#         os.remove(filename)
+#     writeMatrix(filename=filename, matrixString="5 4 1 8\n5 2 9 6\n7 3 3 2")
+#     res = two_ways_path_sum(filename)
+#     assert (res == [5, 5, 2, 9, 6, 2])
+#
+#     filename = r"Test\matrix2.txt"
+#     if os.path.exists(filename):
+#         os.remove(filename)
+#     writeMatrix(filename=filename, matrixString="5 4 1 100\n5 2 9 6\n7 3 3 2")
+#     res2 = two_ways_path_sum(filename)
+#     assert (res2 == [5, 4, 1, 100, 6, 2])
+#
+#     filename = r"Test\matrix3.txt"
+#     if os.path.exists(filename):
+#         os.remove(filename)
+#     writeMatrix(filename=filename, matrixString="-5 -4 -1 -8\n-5 -2 -9 -6\n-7 -3 -3 -2")
+#     res3 = two_ways_path_sum(filename)
+#     assert (res3 == [-5, -4, -2, -3, -3, -2])
+#
+#     filename = r"Test\matrix4.txt"
+#     if os.path.exists(filename):
+#         os.remove(filename)
+#     writeMatrix(filename=filename, matrixString="-2 1 -3\n-1 -1 8\n-1 -1 -5\n-1 -1 1")
+#     res4 = two_ways_path_sum(filename)
+#     assert (res4 == [-2, 1, -1, 8, -5, 1])
+#
+#     filename = r"Test\matrix5.txt"
+#     if os.path.exists(filename):
+#         os.remove(filename)
+#     writeMatrix(filename=filename, matrixString="1 1 1 1 1\n-2 1 1 1 1\n-2 1 1 1 1\n100 1 1 1 1")
+#     res5 = two_ways_path_sum(filename)
+#     assert (res5 == [1, -2, -2, 100, 1, 1, 1, 1])
+#
+#     filename = r"Test\matrix6.txt"
+#     if os.path.exists(filename):
+#         os.remove(filename)
+#     writeMatrix(filename=filename, matrixString="1 1 1\n1 1 11\n100 10 5")
+#     res5 = two_ways_path_sum(filename)
+#     assert (res5 == [1,1,100,10,5])

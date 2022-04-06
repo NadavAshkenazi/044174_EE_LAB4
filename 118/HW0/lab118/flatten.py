@@ -11,8 +11,8 @@ def flatten(l):
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    assert (flatten([]) == [])
-    assert (flatten([0, 1, [2, 3], 4, [5, 6]]) == [0, 1, 2, 3, 4, 5, 6])
-    assert (flatten([0, [[[1]]], [[2, 3], [4, [[5, 6]]]]]) == [0, 1, 2, 3, 4, 5, 6])
-    assert (flatten([[[0, [[[1]]], [[[2, 3]], [], [4, [[5, 6]]]]]]]) == [0, 1, 2, 3, 4, 5, 6])
+# if __name__ == '__main__':
+#     assert (flatten([]) == [])
+#     assert (flatten([0, 1, [2, 3], 4, [5, 6]]) == [0, 1, 2, 3, 4, 5, 6])
+#     assert (flatten([0, [[[1]]], [[2, 3], [4, [[5, 6]]]]]) == [0, 1, 2, 3, 4, 5, 6])
+#     assert (flatten([[[0, [[[1]]], [[[2, 3]], [], [4, [[5, 6]]]]]]]) == [0, 1, 2, 3, 4, 5, 6])

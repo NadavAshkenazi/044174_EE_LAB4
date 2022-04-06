@@ -55,30 +55,30 @@ def game_of_life(board, steps):
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    initialBoard = [[DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
-                    [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
-                    [DEAD, DEAD, ALIVE, ALIVE, ALIVE, DEAD, DEAD],
-                    [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
-                    [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD]]
-    print("initial_board: ")
-    printBoard(initialBoard)
-    wantedBoard = [[DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
-                   [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
-                   [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
-                   [DEAD, DEAD, DEAD, ALIVE, DEAD, DEAD, DEAD],
-                   [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD]]
-    print("wanted_board: ")
-    printBoard(wantedBoard)
-
-    resBoard = game_of_life(board=initialBoard, steps=1)
-
-    print("resBoard: ")
-    printBoard(resBoard)
-    assert(resBoard == wantedBoard)
-    unwantedBoard = [[DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
-                   [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
-                   [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
-                   [DEAD, DEAD, DEAD, ALIVE, DEAD, DEAD, DEAD],
-                   [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, ALIVE]]
-    assert(resBoard != unwantedBoard)
+# if __name__ == '__main__':
+#     initialBoard = [[DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
+#                     [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
+#                     [DEAD, DEAD, ALIVE, ALIVE, ALIVE, DEAD, DEAD],
+#                     [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
+#                     [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD]]
+#     print("initial_board: ")
+#     printBoard(initialBoard)
+#     wantedBoard = [[DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
+#                    [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
+#                    [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
+#                    [DEAD, DEAD, DEAD, ALIVE, DEAD, DEAD, DEAD],
+#                    [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD]]
+#     print("wanted_board: ")
+#     printBoard(wantedBoard)
+#
+#     resBoard = game_of_life(board=initialBoard, steps=1)
+#
+#     print("resBoard: ")
+#     printBoard(resBoard)
+#     assert(resBoard == wantedBoard)
+#     unwantedBoard = [[DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD],
+#                    [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
+#                    [DEAD, DEAD, ALIVE, DEAD, ALIVE, DEAD, DEAD],
+#                    [DEAD, DEAD, DEAD, ALIVE, DEAD, DEAD, DEAD],
+#                    [DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, ALIVE]]
+#     assert(resBoard != unwantedBoard)
